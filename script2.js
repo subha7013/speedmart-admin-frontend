@@ -1,6 +1,6 @@
 /* ================= CONFIG ================= */
 
-const BASE_URL = "https://client-server-speedmart.onrender.com";
+const BASE_URL = "https://client-server-speedmart-1.onrender.com";
 
 
 /* ================= LOGIN ================= */
@@ -215,4 +215,5 @@ window.onload = ()=>{
         afterLogin();
     }
 };
+
 
