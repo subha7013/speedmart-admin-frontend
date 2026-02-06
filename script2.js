@@ -1,6 +1,6 @@
 /* ================= CONFIG ================= */
 
-const BASE_URL = "http://localhost:5000";
+const BASE_URL = "https://client-server-speedmart.onrender.com";
 
 
 /* ================= LOGIN ================= */
@@ -215,3 +215,4 @@ window.onload = ()=>{
         afterLogin();
     }
 };
+
