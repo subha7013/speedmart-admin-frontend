@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, sans-serif;
+}
+
+/* NAVBAR */
+nav{
+    background:#000;
+    color:white;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    padding:12px 40px;
+    height: 12vh;
+}
+
+.logo img{
+    height:250px;
+    width: 300px;
+}
+
+/* .options{
+    list-style:none;
+    display:flex;
+    gap:20px;
+} */
+
+.btn{
+    background:red;
+    color:white;
+    border:none;
+    padding:8px 18px;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:white;
+    color:red;
+}
+
+/* LOGIN */
+.auth-card{
+    width:320px;
+    margin:80px auto;
+    padding:25px;
+    background:white;
+    border-radius:12px;
+    box-shadow:0 0 15px rgba(0,0,0,.2);
+}
+
+.auth-card input{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+}
+
+.submit-btn{
+    width:100%;
+    padding:10px;
+    background:orangered;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+/* ORDERS */
+.dashboard{
+    padding:60px;
+    display:none;
+}
+
+.orders-header{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+}
+
+.order-card{
+    border: 2px solid #0ef727;
+    padding: 21px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background: #fafafa;
+}
+
+.deliver-btn{
+    margin-top:10px;
+    background:green;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:6px;
+    cursor:pointer;
+}
+.deliver-btn:hover{
+    background: linear-gradient(to left, rgb(241, 237, 237) ,rgb(46, 188, 61));
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    border: none;
+
+}
+.orders-header input[type="date"]{
+    background-color: #ffffff;
+    color: #333;
+    padding: 8px 12px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+    transition: all 0.25s ease;
+}
+
+/* Hover Effect */
+.orders-header input[type="date"]:hover{
+    border-color: #ff4d4d;
+    box-shadow: 0 0 4px rgba(255, 77, 77, 0.4);
+}
+
+/* Focus Effect */
+.orders-header input[type="date"]:focus{
+    border-color: #ff0000;
+    box-shadow: 0 0 6px rgba(255, 0, 0, 0.5);
+}
+
+/* TOAST */
+.toast{
+    position:fixed;
+    top:150px;
+    right:40px;
+    background:rgb(234, 32, 6);
+    color:rgb(255, 253, 253);
+    padding:15px;
+    border-radius:8px;
+    display:none;
+    font-weight: bolder;
+}
