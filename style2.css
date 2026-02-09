@@ -128,8 +128,8 @@ nav{
     border-color: #ff0000;
     box-shadow: 0 0 6px rgba(255, 0, 0, 0.5);
 }
-#navOptions button{
-    text-decoration: none;
+nav ul li{
+    list-style: none;
 }
 
 /* TOAST */
@@ -177,4 +177,5 @@ nav{
     }
 
 }
+
 
