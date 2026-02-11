@@ -111,7 +111,14 @@ function renderOrders(orders){
 
             <h3>Order ID: ${order._id}</h3>
             
-            <h4>Order By: ${order.userId || "Unknown"}</h4>
+ <h4>
+Order By: ${
+    order.userId
+        ? "..." + order.userId.toString().slice(-5)
+        : "Unknown"
+}
+</h4>
+
 
             <p>
                 Status:
@@ -217,6 +224,7 @@ window.onload = ()=>{
         afterLogin();
     }
 };
+
 
 
 
