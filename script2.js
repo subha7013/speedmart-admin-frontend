@@ -110,7 +110,8 @@ function renderOrders(orders){
         <div class="order-card">
 
             <h3>Order ID: ${order._id}</h3>
-<h4>Order By: ${order.email || order.users?.email || order.userId?.email || "Unknown"}</h4>
+            
+            <h4>Order By: ${order.userId || "Unknown"}</h4>
 
             <p>
                 Status:
@@ -216,6 +217,7 @@ window.onload = ()=>{
         afterLogin();
     }
 };
+
 
 
 
