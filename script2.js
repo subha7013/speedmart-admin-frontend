@@ -110,7 +110,7 @@ function renderOrders(orders){
         <div class="order-card">
 
             <h3>Order ID: ${order._id}</h3>
-
+            <h4>Order By: ${order.email}</h4>
             <p>
                 Status:
                 <b style="color:${getStatusColor(order.status)}">
@@ -215,5 +215,6 @@ window.onload = ()=>{
         afterLogin();
     }
 };
+
 
 
